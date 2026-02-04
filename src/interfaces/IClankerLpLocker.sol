@@ -56,6 +56,12 @@ interface IClankerLpLocker {
     // get the reward info for a token
     function tokenRewards(address token) external view returns (TokenRewardInfo memory);
 
+    // update reward recipient
+    function updateRewardRecipient(address token, uint256 rewardIndex, address newRecipient) external;
+
+    // update reward admin
+    function updateRewardAdmin(address token, uint256 rewardIndex, address newAdmin) external;
+
     function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
 
