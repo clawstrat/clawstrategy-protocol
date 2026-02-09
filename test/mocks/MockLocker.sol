@@ -34,6 +34,14 @@ contract MockLocker is IClankerLpLocker {
         return 1;
     }
 
+    function updateRewardRecipient(address, uint256, address) external {
+        // Mock implementation
+    }
+
+    function updateRewardAdmin(address, uint256, address) external {
+        // Mock implementation
+    }
+
     function supportsInterface(bytes4) external pure returns (bool) {
         return true;
     }
